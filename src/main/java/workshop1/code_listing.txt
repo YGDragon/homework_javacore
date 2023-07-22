@@ -1,0 +1,5 @@
+Для выполнения компиляции выполнил комаду
+javac -d out -sourcepath .\code code\workshop1\task1\Main.java -encoding utf-8
+
+Для запуска приложения выполнил команду
+java -cp .\out workshop1.task1.Main
