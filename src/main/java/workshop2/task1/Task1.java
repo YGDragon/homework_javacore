@@ -1,18 +1,19 @@
 package workshop2.task1;
 
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Random;
 
 public class Task1 {
     public static void main(String[] args) {
         //Составление исходного массива случайных чисел
-        int minRand = -20;
-        int maxRand = 20;
+        int minRand = -10;
+        int maxRand = 10;
         int sizeArray = getArraySize(minRand, maxRand);
         int[] originalArray = getRandomArray(sizeArray, minRand, maxRand);
-        System.out.println(Arrays.toString(originalArray));
+        System.out.println("исходный массив -> ".toUpperCase(Locale.ROOT) + Arrays.toString(originalArray));
         int[] sortedArray = countingSort(originalArray);
-        System.out.println(Arrays.toString(sortedArray));
+        System.out.println("  сортированный -> ".toUpperCase(Locale.ROOT) + Arrays.toString(sortedArray));
     }
 
     public static int[] getRandomArray(int sizeArray, int min, int max) {
