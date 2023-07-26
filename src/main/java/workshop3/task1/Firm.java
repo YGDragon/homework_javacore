@@ -1,5 +1,7 @@
 package workshop3.task1;
 
+import workshop3.task2.Manager;
+
 public class Firm {
     public static void main(String[] args) {
         int[] raiseData = {45, 5000};//возраст сотрудников, зарплата
@@ -30,7 +32,13 @@ public class Firm {
                         "Инженер-электроник",
                         375294425661L,
                         73000,
-                        47)};
+                        47),
+                new Manager("Белокуров Петр Петрович",
+                        "Руководитель",
+                        375291234567L,
+                        130000,
+                        45)
+        };
         View view = new View();
         Service service = new Service();
         while (true) {
@@ -56,6 +64,8 @@ public class Firm {
                             Employee.calculateAverageAge(employees)
                     );
                 }
+                case (6) -> //повышение зарплаты сотрудникам кроме руководителя
+                        Manager.raiseSalary(employees, raiseData[1]);
                 default -> System.exit(0);
             }
         }
