@@ -7,5 +7,10 @@ import lombok.Data;
 @AllArgsConstructor
 public class Product {
     private String title;
-    private String price;
+    private int price;
+
+    @Override
+    public String toString() {
+        return String.format("%s: %s$", title, price);
+    }
 }

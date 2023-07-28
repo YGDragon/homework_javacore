@@ -8,6 +8,6 @@ import lombok.Data;
 public class Costumer {
     private String name;
     private int age;
-    private long phoneNumber;
+    private String phone;
 
 }
