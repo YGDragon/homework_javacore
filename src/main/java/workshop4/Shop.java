@@ -10,7 +10,7 @@ import java.util.Locale;
 
 public class Shop {
     public static void main(String[] args) {
-        int sizeOrders = 1;
+        int sizeOrders = 5;
         Costumer[] costumers = {
                 new Costumer("Иванов Иван Иванович", 31, "375295127601"),
                 new Costumer("Петров Петр Петрович", 26, "375332318813")
